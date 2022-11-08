@@ -29,7 +29,7 @@ public class Program{
             System.out.println("Undefined language");
             return;
         }
-        //while(pa == 1){
+        while(pa == 1){
             String[] pick = {"1 - Kamien\n2 - Papier\n3 - Nozyce\nWpisz liczbe, aby wybrac: ", "1 - Rock\n2 - Paper\n3 - Scissor\nTo pick, type number: "};
             System.out.println(pick[langarray]);
             int p = scanner.nextInt();
@@ -160,15 +160,16 @@ public class Program{
                             "---.__(___)                                                                 (__________.---\n" +
                             "                                 " + resw[langarray]);
                 }
-               /* String[] wtpa = {"Wpisz dowolny znak, aby zagrac ponownie, aby wyjsc, wcisnij q: ", "Type any letter to play again, to quit, press q: "};
+                String[] wtpa = {"Wpisz dowolny znak, aby zagrac ponownie, aby wyjsc, wcisnij q: ", "Type any letter to play again, to quit, press q: "};
                 System.out.println(wtpa[langarray]);
-                if (wtpa.equals("q")) {
+                char ttpa = scanner.next().charAt(0);
+                if (ttpa=='q') {
                     String[] gb = {"Ilosc zagranych gier: " + i + ", do zobaczenia pozniej!", "Number of games: " + i + ", see you later!"};
                     System.out.println(gb[langarray]);
                     pa = 0;
                 }
                 i++;
-            }*/
+            }
         }
     }
     public static void printWithDelays(String data, TimeUnit unit, long delay)
