@@ -10,7 +10,7 @@ public class Program{
                         "$$ |  $$ |$$ |      $$ |      $$ |     $$ |  $$ |  \n" +
                         "$$ |  $$ |$$$$$$$$\\ $$$$$$$$\\ $$$$$$$$\\ $$$$$$  |  \n" +
                         "\\__|  \\__|\\________|\\________|\\________|\\______/  ");
-        System.out.println("Welcome to Rock Paper Scissor");
+        System.out.println("Welcome to Rock Paper Scissors");
 
         System.out.println("Avaliable languages: English/Polish");
         System.out.print("Choose language by typing: ");
@@ -30,7 +30,7 @@ public class Program{
             return;
         }
         while(pa == 1){
-            String[] pick = {"1 - Kamien\n2 - Papier\n3 - Nozyce\nWpisz liczbe, aby wybrac: ", "1 - Rock\n2 - Paper\n3 - Scissor\nTo pick, type number: "};
+            String[] pick = {"1 - Kamien\n2 - Papier\n3 - Nozyce\nWpisz liczbe, aby wybrac: ", "1 - Rock\n2 - Paper\n3 - Scissors\nTo pick, type number: "};
             System.out.println(pick[langarray]);
             int p = scanner.nextInt();
             if (p > 3 && p < 1) {
@@ -39,7 +39,7 @@ public class Program{
                 String[][] picked = {
                         {"Kamien", "Rock"},
                         {"Papier", "Paper"},
-                        {"Nozyce", "Scissor"}
+                        {"Nozyce", "Scissors"}
                 };
                 double dpick = Math.random() * 3;
                 int cpick = (int) dpick;
